@@ -118,7 +118,7 @@ vinicius.describe()</code></pre>
       <div class="container kpis__grid">
         <div class="kpi reveal"><span class="kpi__value" data-count="2022">2022</span><span class="kpi__label">início da carreira em dados</span></div>
         <div class="kpi reveal"><span class="kpi__value"><span data-count="2">2</span></span><span class="kpi__label">empresas atuando com dados e BI</span></div>
-        <div class="kpi reveal"><span class="kpi__value"><span data-count="4">4</span></span><span class="kpi__label">projetos publicados</span></div>
+        <div class="kpi reveal"><span class="kpi__value"><span data-count="7">7</span></span><span class="kpi__label">projetos publicados</span></div>
         <div class="kpi reveal"><span class="kpi__value">EN</span><span class="kpi__label">inglês avançado</span></div>
       </div>
     </section>
@@ -249,6 +249,9 @@ vinicius.describe()</code></pre>
         <div class="filters reveal" role="group" aria-label="Filtrar projetos">
           <button type="button" class="filter is-active" data-filter="all">Todos</button>
           <button type="button" class="filter" data-filter="python">Python</button>
+          <button type="button" class="filter" data-filter="sql">SQL</button>
+          <button type="button" class="filter" data-filter="ml">Machine Learning</button>
+          <button type="button" class="filter" data-filter="web">Web Analytics</button>
           <button type="button" class="filter" data-filter="bi">BI</button>
           <button type="button" class="filter" data-filter="governanca">Governança</button>
         </div>
@@ -259,9 +262,67 @@ vinicius.describe()</code></pre>
           - data-tags define em quais filtros o card aparece (python, bi, governanca)
         -->
         <div class="projects">
-          <article class="project reveal" data-tags="python">
+          <article class="project reveal" data-tags="python sql bi">
             <div class="project__top">
               <span class="project__num mono">01</span>
+              <span class="project__type mono">mercado financeiro</span>
+            </div>
+            <h3>Fund Flow Analytics: indústria de fundos no Brasil</h3>
+            <p>Pipeline ponta a ponta com dados públicos reais da CVM e do Banco Central (24 meses, ~12 milhões de linhas): captação, gestoras e desempenho contra o CDI.</p>
+            <ul class="project__points">
+              <li>Data lake em camadas com DuckDB e Parquet, 7 SQLs com window functions</li>
+              <li>Inferência: Wilcoxon, Kruskal-Wallis, bootstrap e regressão com efeitos fixos</li>
+              <li>Pronto para AWS (S3, Glue, Athena, Terraform) e Power BI com 27 medidas DAX</li>
+              <li>Achado: só 22% dos fundos bateram o CDI em 12 meses</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>SQL</li><li>AWS</li><li>Power BI</li><li>Estatística</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20/fund-flow-analytics" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="python sql ml">
+            <div class="project__top">
+              <span class="project__num mono">02</span>
+              <span class="project__type mono">risco de crédito</span>
+            </div>
+            <h3>Credit Risk Analytics: motor de risco de crédito</h3>
+            <p>Da feature store em SQL à decisão de crédito: probabilidade de default, exposição, segmentação, política de aprovação e monitoramento do modelo.</p>
+            <ul class="project__points">
+              <li>5 modelos de PD (scorecard WoE, Random Forest, XGBoost, LightGBM): AUC 0,79 · KS 0,45</li>
+              <li>Corte ótimo: inadimplência dos aprovados de 22% para 9,8%</li>
+              <li>Regressão (EAD), KMeans, programação linear de limites, PSI e fairness</li>
+              <li>Eventos raros: fraude a 0,17% com PR-AUC 0,80 e limiar por custo</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>SQL</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20/credit-risk-analytics" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="web sql python">
+            <div class="project__top">
+              <span class="project__num mono">03</span>
+              <span class="project__type mono">web analytics</span>
+            </div>
+            <h3>Digital Account Funnel: tracking e funil bancário</h3>
+            <p>Web Analytics de ponta a ponta para a abertura de conta de um banco digital fictício: do plano de tracking ao painel de mídia.</p>
+            <ul class="project__points">
+              <li>Plano de tracking, dataLayer, Consent Mode v2, GTM web e server-side</li>
+              <li>SQL no schema do GA4 → BigQuery: funil, coortes, CAC/ROAS e QA de tracking</li>
+              <li>Atribuição multitoque com Markov e teste A/B com poder e Bayes</li>
+              <li>Taxonomia de UTMs com validador e reconciliação AppsFlyer</li>
+            </ul>
+            <ul class="tags"><li>GA4</li><li>GTM</li><li>BigQuery</li><li>Looker Studio</li><li>A/B test</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20/digital-account-funnel" target="_blank" rel="noopener">Código ↗</a>
+              <a href="https://viniciusg20.github.io/digital-account-funnel/" target="_blank" rel="noopener">Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="python">
+            <div class="project__top">
+              <span class="project__num mono">04</span>
               <span class="project__type mono">pipeline</span>
             </div>
             <h3>Automação ETL com Python e Pandas</h3>
@@ -279,7 +340,7 @@ vinicius.describe()</code></pre>
 
           <article class="project reveal" data-tags="bi">
             <div class="project__top">
-              <span class="project__num mono">02</span>
+              <span class="project__num mono">05</span>
               <span class="project__type mono">dashboard</span>
             </div>
             <h3>Dashboard Analítico em Power BI</h3>
@@ -297,7 +358,7 @@ vinicius.describe()</code></pre>
 
           <article class="project reveal" data-tags="governanca python">
             <div class="project__top">
-              <span class="project__num mono">03</span>
+              <span class="project__num mono">06</span>
               <span class="project__type mono">governança</span>
             </div>
             <h3>Dados com foco em LGPD na Saúde</h3>
@@ -315,7 +376,7 @@ vinicius.describe()</code></pre>
 
           <article class="project reveal" data-tags="python">
             <div class="project__top">
-              <span class="project__num mono">04</span>
+              <span class="project__num mono">07</span>
               <span class="project__type mono">automação</span>
             </div>
             <h3>Automação de Relatórios com Python</h3>
