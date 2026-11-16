@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinicius Gonzales | Ciência de Dados</title>
+  <meta name="description" content="Portfólio de Vinicius Gonzales: Analista de Dados com foco em Ciência de Dados, Python, SQL, Power BI, BigQuery e Databricks.">
+  <meta property="og:title" content="Vinicius Gonzales | Ciência de Dados">
+  <meta property="og:description" content="Analista de Dados: Python, SQL, BI e Engenharia de Dados, com foco em Ciência de Dados.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Aplica o tema salvo antes de desenhar a página (evita "piscar")
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#topo" class="logo" aria-label="Início">
+        <span class="logo__bracket">[</span>vg<span class="logo__dot">.</span><span class="logo__bracket">]</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="topo">
+      <svg class="hero__plot" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="hero__dots" id="scatter"></g>
+        <path class="hero__fit" d="M20 360 C 180 300, 320 220, 580 60" />
+      </svg>
+
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="status"><span class="status__dot"></span>Disponível · híbrido ou remoto</p>
+          <h1 class="hero__title">Vinicius<br>Gonzales</h1>
+          <p class="hero__role">Analista de Dados <span class="sep">→</span> Ciência de Dados</p>
+          <p class="hero__lead">
+            Transformo dados brutos em decisões. Desde 2022 trabalho com extração, tratamento,
+            modelagem e análise de dados em empresas, com <strong>Python</strong>, <strong>SQL</strong>,
+            <strong>Power BI</strong>, <strong>BigQuery</strong> e <strong>Databricks</strong>.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--ghost" href="assets/curriculo-vinicius-gonzales.pdf" target="_blank" rel="noopener">Baixar currículo</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/viniciusg20" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vinicius-gonzales" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="mailto:lopesviniciusg10@gmail.com" aria-label="E-mail">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Célula de "notebook" com o perfil -->
+        <figure class="notebook reveal" aria-label="Resumo do perfil em formato de notebook Python">
+          <div class="notebook__bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="notebook__file">perfil.ipynb</span>
+          </div>
+          <div class="cell">
+            <span class="cell__prompt">In [1]:</span>
+<pre class="cell__code"><code><span class="k">import</span> pandas <span class="k">as</span> pd
+
+vinicius = pd.read_csv(<span class="s">"perfil.csv"</span>)
+vinicius.describe()</code></pre>
+          </div>
+          <div class="cell cell--out">
+            <span class="cell__prompt">Out[1]:</span>
+            <table class="df">
+              <thead><tr><th></th><th>valor</th></tr></thead>
+              <tbody>
+                <tr><th>cargo</th><td>Analista de Dados</td></tr>
+                <tr><th>foco</th><td>Data Science · ML</td></tr>
+                <tr><th>em_dados_desde</th><td>2022</td></tr>
+                <tr><th>stack</th><td>Python · SQL · Power BI</td></tr>
+                <tr><th>cloud</th><td>BigQuery · Databricks</td></tr>
+                <tr><th>local</th><td>Mogi das Cruzes, SP</td></tr>
+                <tr><th>ingles</th><td>Avançado</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ KPIs ============ -->
+    <section class="kpis" aria-label="Destaques">
+      <div class="container kpis__grid">
+        <div class="kpi reveal"><span class="kpi__value" data-count="2022">2022</span><span class="kpi__label">início da carreira em dados</span></div>
+        <div class="kpi reveal"><span class="kpi__value"><span data-count="2">2</span></span><span class="kpi__label">empresas atuando com dados e BI</span></div>
+        <div class="kpi reveal"><span class="kpi__value"><span data-count="4">4</span></span><span class="kpi__label">projetos publicados</span></div>
+        <div class="kpi reveal"><span class="kpi__value">EN</span><span class="kpi__label">inglês avançado</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2>Sobre mim</h2>
+        </header>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Sou Analista de Dados com experiência em <strong>Business Intelligence</strong>,
+              <strong>Business Analytics</strong> e <strong>Engenharia de Dados</strong>. Desde 2022 trabalho
+              com extração, tratamento, integração, modelagem e análise de dados em empresas,
+              criando automações, consultas, dashboards e indicadores que ajudam a medir resultados e a decidir melhor.
+            </p>
+            <p>
+              Já trabalhei com grandes volumes de dados, integrei fontes diferentes, validei métricas e
+              organizei bases para análise. Sou formado em Sistemas de Informação, tenho pós-graduação em
+              Análise de Dados e hoje estou migrando para <strong>Ciência de Dados</strong>, estudando
+              estatística aplicada, análise quantitativa e <strong>Machine Learning</strong>.
+            </p>
+            <p class="about__goal">
+              <span class="mono">objetivo →</span> usar Python, SQL e modelagem de dados para resolver
+              problemas de negócio e apoiar a tomada de decisão.
+            </p>
+          </div>
+          <aside class="about__card reveal">
+            <h3 class="mono small">soft_skills</h3>
+            <ul class="checklist">
+              <li>Pensamento analítico e resolução de problemas</li>
+              <li>Comunicação clara com times técnicos e de negócio</li>
+              <li>Colaboração com equipes multidisciplinares</li>
+              <li>Traduzir demandas de negócio em soluções analíticas</li>
+              <li>Proatividade, organização e melhoria contínua</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIÊNCIA ============ -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2>Experiência</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job__meta">
+              <span class="job__period">jul/2025 — atual</span>
+              <span class="badge badge--live">atual</span>
+            </div>
+            <div class="job__body">
+              <h3>Engeline</h3>
+              <p class="job__role">Assistente Administrativo · Dados e Business Intelligence</p>
+              <ul>
+                <li>Soluções analíticas com Power BI e SQL para acompanhar indicadores operacionais.</li>
+                <li>Dashboards gerenciais de performance operacional, processos e indicadores de negócio.</li>
+                <li>Consultas SQL para extrair, transformar e analisar dados de diferentes fontes.</li>
+                <li>Automação de processos analíticos com Python: tratamento, consolidação e centralização de dados.</li>
+                <li>Estruturação e modelagem de dados para métricas, indicadores e relatórios gerenciais.</li>
+              </ul>
+              <div class="impact">
+                <span class="impact__label mono">impacto</span>
+                <ul>
+                  <li>Menos trabalho manual e relatórios gerados mais rápido com automações em Python.</li>
+                  <li>Indicadores mais confiáveis com dados padronizados e tratados.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>Power BI</li><li>SQL</li><li>Python</li><li>Pandas</li><li>Modelagem</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job__meta"><span class="job__period">nov/2022 — out/2024</span></div>
+            <div class="job__body">
+              <h3>Cognizant</h3>
+              <p class="job__role">Analista de Dados · Web Analytics</p>
+              <ul>
+                <li>Projetos de dados com SQL, BigQuery, GA4, Google Tag Manager e Looker Studio.</li>
+                <li>Extração, tratamento e análise de grandes volumes de dados para gerar insights.</li>
+                <li>Dashboards de KPIs de negócio, comportamento de usuários e performance.</li>
+                <li>Estruturação, validação e padronização de eventos, métricas e indicadores.</li>
+                <li>Análise de jornadas e funis de conversão para encontrar oportunidades de otimização.</li>
+              </ul>
+              <div class="impact">
+                <span class="impact__label mono">impacto</span>
+                <ul>
+                  <li>Dados mais confiáveis nas análises com validação e padronização de métricas.</li>
+                  <li>Oportunidades de otimização identificadas em indicadores de performance.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>BigQuery</li><li>SQL</li><li>GA4</li><li>GTM</li><li>Looker Studio</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job__meta"><span class="job__period">2019 — 2022</span></div>
+            <div class="job__body">
+              <h3>Prefeitura de Ferraz de Vasconcelos</h3>
+              <p class="job__role">Analista de Suporte Técnico</p>
+              <ul>
+                <li>Suporte à infraestrutura, redes e sistemas internos.</li>
+                <li>Diagnóstico de incidentes, manutenção de servidores e gestão de acessos.</li>
+                <li>Monitoramento de desempenho e estabilidade dos sistemas.</li>
+              </ul>
+              <ul class="tags"><li>Infraestrutura</li><li>Redes</li><li>Servidores</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2>Projetos</h2>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar projetos">
+          <button type="button" class="filter is-active" data-filter="all">Todos</button>
+          <button type="button" class="filter" data-filter="python">Python</button>
+          <button type="button" class="filter" data-filter="bi">BI</button>
+          <button type="button" class="filter" data-filter="governanca">Governança</button>
+        </div>
+
+        <!--
+          COMO EDITAR UM PROJETO:
+          - troque o href do link "Código" pelo link do repositório no GitHub
+          - data-tags define em quais filtros o card aparece (python, bi, governanca)
+        -->
+        <div class="projects">
+          <article class="project reveal" data-tags="python">
+            <div class="project__top">
+              <span class="project__num mono">01</span>
+              <span class="project__type mono">pipeline</span>
+            </div>
+            <h3>Automação ETL com Python e Pandas</h3>
+            <p>Pipeline ETL que trata, transforma e consolida dados e gera relatórios analíticos sozinho.</p>
+            <ul class="project__points">
+              <li>Limpeza e padronização com Pandas</li>
+              <li>Consolidação de várias fontes</li>
+              <li>Relatórios gerados automaticamente</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>ETL</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="bi">
+            <div class="project__top">
+              <span class="project__num mono">02</span>
+              <span class="project__type mono">dashboard</span>
+            </div>
+            <h3>Dashboard Analítico em Power BI</h3>
+            <p>Dashboards interativos para acompanhar e analisar indicadores, com modelagem de dados e métricas em DAX.</p>
+            <ul class="project__points">
+              <li>Modelo de dados em estrela</li>
+              <li>Medidas e KPIs em DAX</li>
+              <li>Visualizações para apoiar decisões</li>
+            </ul>
+            <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="governanca python">
+            <div class="project__top">
+              <span class="project__num mono">03</span>
+              <span class="project__type mono">governança</span>
+            </div>
+            <h3>Dados com foco em LGPD na Saúde</h3>
+            <p>Projeto com dados fictícios que aplica governança e proteção de dados num cenário da área da saúde.</p>
+            <ul class="project__points">
+              <li>Estruturação de bases e controle de acesso</li>
+              <li>Princípios de privacidade da LGPD</li>
+              <li>Análise sem expor dados sensíveis</li>
+            </ul>
+            <ul class="tags"><li>LGPD</li><li>SQL</li><li>Governança</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="python">
+            <div class="project__top">
+              <span class="project__num mono">04</span>
+              <span class="project__type mono">automação</span>
+            </div>
+            <h3>Automação de Relatórios com Python</h3>
+            <p>Scripts que geram relatórios automaticamente, consolidando e organizando dados para acompanhar indicadores.</p>
+            <ul class="project__points">
+              <li>Manipulação e consolidação com Pandas</li>
+              <li>Saída pronta para análise</li>
+              <li>Menos tempo gasto em tarefas repetitivas</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>Automação</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/viniciusg20" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="more reveal">
+          <a href="https://github.com/viniciusg20" target="_blank" rel="noopener" class="mono">ver todos os repositórios no GitHub ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2>Competências técnicas</h2>
+        </header>
+        <div class="skills">
+          <div class="skill reveal">
+            <h3>Programação e análise</h3>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>SQL</li><li>Análise exploratória</li><li>Tratamento de dados</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>BI e Analytics</h3>
+            <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Looker Studio</li><li>KPIs</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Engenharia de Dados</h3>
+            <ul class="tags"><li>ETL/ELT</li><li>BigQuery</li><li>Databricks</li><li>SQL Server</li><li>Integração de dados</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Modelagem</h3>
+            <ul class="tags"><li>Modelagem de dados</li><li>Data Warehouse</li><li>Bases analíticas</li><li>Qualidade de dados</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Estatística</h3>
+            <ul class="tags"><li>Estatística aplicada</li><li>Análise quantitativa</li><li>Padrões</li><li>Machine Learning <em>(estudando)</em></li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Automação</h3>
+            <ul class="tags"><li>Scripts Python</li><li>Relatórios automáticos</li><li>Otimização de processos</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Web Analytics</h3>
+            <ul class="tags"><li>Google Analytics 4</li><li>Google Tag Manager</li><li>Funis de conversão</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Governança</h3>
+            <ul class="tags"><li>LGPD</li><li>Documentação</li><li>Validação de dados</li><li>Git</li><li>GitHub</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMAÇÃO ============ -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__index">05</span>
+          <h2>Formação e cursos</h2>
+        </header>
+        <div class="edu">
+          <div class="edu__col reveal">
+            <h3 class="mono small">formação_acadêmica</h3>
+            <div class="edu__item">
+              <strong>Pós-graduação em Análise de Dados</strong>
+              <span>Faculdade Descomplica</span>
+            </div>
+            <div class="edu__item">
+              <strong>Bacharelado em Sistemas de Informação</strong>
+              <span>Universidade de Mogi das Cruzes (UMC) · 2022</span>
+            </div>
+          </div>
+          <div class="edu__col reveal">
+            <h3 class="mono small">cursos</h3>
+            <ul class="checklist">
+              <li>Estatística e Análise de Dados com Python</li>
+              <li>SQL para Análise de Dados</li>
+              <li>Power BI para Business Intelligence</li>
+              <li>Digital Analytics com Google Analytics 4</li>
+              <li>Introdução à Análise de Funil e Conversão</li>
+              <li>Fundamentos de Marketing Digital</li>
+              <li>The Complete JavaScript Course · Udemy (2023)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section contact" id="contato">
+      <div class="container contact__inner reveal">
+        <span class="section__index">06</span>
+        <h2 class="contact__title">Vamos conversar?</h2>
+        <p class="contact__lead">Estou aberto a oportunidades em Ciência de Dados e Analytics, no modelo híbrido ou remoto.</p>
+        <a class="contact__email" href="mailto:lopesviniciusg10@gmail.com">lopesviniciusg10@gmail.com</a>
+        <div class="contact__links">
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/vinicius-gonzales" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/viniciusg20" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="https://wa.me/5511940369484" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Vinicius Gonzales</span>
+      <span class="mono">feito com HTML, CSS e JavaScript · hospedado no GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
